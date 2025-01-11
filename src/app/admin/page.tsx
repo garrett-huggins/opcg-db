@@ -15,7 +15,7 @@ export default function Admin() {
     console.log("Submitting JSON Data:", formData);
 
     try {
-      const response = await fetch("http://localhost:8000/cards", {
+      const response = await fetch("api/cards", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
